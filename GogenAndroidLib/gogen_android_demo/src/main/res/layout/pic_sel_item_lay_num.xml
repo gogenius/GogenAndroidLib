@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_horizontal_margin">
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pic_sel_ic_minus"/>
+
+    <EditText
+        android:id="@+id/select_num"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:editable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="9"/>
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pic_sel_ic_plus"/>
+
+    <TextView
+        android:id="@+id/first_image_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="压缩后参数"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

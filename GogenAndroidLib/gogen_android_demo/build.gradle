@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "lib.gogenius.com.gogen_android_lib"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //导入需要的系统库
+    testCompile rootProject.ext.dependencies["junit"]
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["support-v4"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["design"]
+    //compile rootProject.ext.dependencies["multidex"]
+
+    //导入需要的本地库
+    //日志输出
+    compile project(':gogen_android_lib')
+//    compile project(':libraries:xRefreshLib')
+//    compile project(':libraries:galleryfinal')
+//    compile project(':libraries:PullToRefreshSwipeMenuListView')
+
+    //导入需要的第三方开源库
+//    compile rootProject.ext.dependencies["butterknife"]
+//    apt rootProject.ext.dependencies["apt-butterknife"]
+//    compile rootProject.ext.dependencies["fastjson"]
+
+
+}

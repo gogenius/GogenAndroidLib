@@ -1,0 +1,5 @@
+include ':gogen_android_demo'
+include ':gogen_android_lib'
+include ':gogen_other_lib:ILogUtils'
+include ':gogen_other_lib:IPictureSelectorLib'
+include ':gogen_other_lib:IUcrop'
