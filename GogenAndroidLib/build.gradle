@@ -35,7 +35,7 @@ allprojects {
     }
 
     //设置编译文件缓存目录，防止项目目录过长
-    //buildDir = "G:/tempBuildDir/${rootProject.name}/${project.name}"
+    buildDir = "G:/tempBuildDir/${rootProject.name}/${project.name}"
 }
 
 task clean(type: Delete) {
